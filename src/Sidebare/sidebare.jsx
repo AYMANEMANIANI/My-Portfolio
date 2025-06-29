@@ -7,7 +7,7 @@ export default function Sidebare() {
       <div className="profile-section">
         <div className="profile-content">
           <img 
-            src="../assets/aymane.png" 
+            src="/aymane.png" 
             alt="Aymane Maniani" 
             className="profile-image"
           />

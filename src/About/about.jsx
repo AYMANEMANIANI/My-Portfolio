@@ -1,12 +1,12 @@
 import React from "react";
-import aymane2 from "../assets/aymane2.jpeg";
+// import aymane2 from "../assets/aymane2.jpeg";
 import "./about.css";
 
 export default function About() {
   return (
     <div className="app-about">
       <div className="about-image">
-        <img src={aymane2} alt="Aymane" className="profile-image" />
+        <img src="/aymane2.jpeg" alt="Aymane" className="profile-image" />
       </div>
       
       <div className="about-content">
