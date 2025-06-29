@@ -8,7 +8,7 @@ export default function Projects() {
       description:
         "Développement d'une plateforme éducative interactive permettant aux utilisateurs d'apprendre en ligne avec suivi de progression, gestion des utilisateurs et contenus dynamiques.",
       technologies: ["React.js", "Laravel", "MySQL"],
-      image: "/public/Nouvlaire.png",
+      image: "/Nouvlaire.png",
       link: "#",
     },
     {
@@ -17,7 +17,7 @@ export default function Projects() {
       description:
         "Création d'une boutique en ligne avec WordPress et WooCommerce, intégrant la gestion des produits, des commandes, des paiements et une interface administrateur personnalisée.",
       technologies: ["WordPress", "WooCommerce", "CMS"],
-      image: "/public/screencapture-klaus-ma-1.png",
+      image: "/screencapture-klaus-ma-1.png",
       link: "https://klaus.ma/",
     },
     {
@@ -26,7 +26,7 @@ export default function Projects() {
       description:
         "Développement d’un mini-jeu ludique pour enfants visant à tester leurs connaissances via une interface animée, avec score et progression visuelle.",
       technologies: ["JavaScript", "HTML5", "CSS3"],
-      image: "/public/P1_game.png",
+      image: "/P1_game.png",
       link: "https://time-game-zeta.vercel.app/",
     },
   ];
