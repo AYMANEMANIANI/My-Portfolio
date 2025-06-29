@@ -25,7 +25,7 @@ export default function Projects() {
       title: "Jeu éducatif interactif",
       description:
         "Développement d’un mini-jeu ludique pour enfants visant à tester leurs connaissances via une interface animée, avec score et progression visuelle.",
-      technologies: ["JavaScript", "HTML5", "CSS3"],
+      technologies: ["JavaScript", "HTML5", "CSS3", "PHP"],
       image: "/P1_game.png",
       link: "https://time-game-zeta.vercel.app/",
     },

@@ -1,10 +1,11 @@
+/* Barre latérale principale */
 menu {
     position: fixed;
     left: 0;
     top: 0;
     bottom: 0;
     width: 250px;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem 1rem;
     color: white;
     background: linear-gradient(135deg, #2d96ff 0%, #1e40af 100%);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
@@ -12,10 +13,51 @@ menu {
     margin: 0;
 }
 
+/* Section de profil */
+.profile-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+}
+
+.profile-image {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    padding: 2px;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.profile-name {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Navigation */
 ul {
     list-style: none;
     padding: 0;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 ul li {
@@ -39,6 +81,7 @@ ul li i {
     font-size: 1.2rem;
 }
 
+/* Section de contact */
 .cantact {
     display: flex;
     justify-content: center;
@@ -63,12 +106,6 @@ ul li i {
     transform: translateY(-3px);
 }
 
-span {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-/* Style pour le titre Contact */
 .cantact-title {
     display: block;
     text-align: center;
@@ -92,24 +129,31 @@ span {
     background: rgba(255, 255, 255, 0.5);
 }
 
-/* Styles pour les écrans mobiles */
+/* Responsive */
 @media (max-width: 768px) {
     menu {
         width: 70px;
         padding: 2rem 0.5rem;
     }
     
-    .nav-link span {
+    .profile-content {
+        justify-content: center;
+        padding: 0;
+    }
+    
+    .profile-name,
+    .cantact-title span {
         display: none;
     }
     
     .cantact {
         flex-direction: column;
         gap: 10px;
+        margin-top: 1rem;
     }
     
     .cantact-title {
-        margin: 1rem 0;
+        margin: 1rem 0 0;
     }
     
     .cantact-title::after {

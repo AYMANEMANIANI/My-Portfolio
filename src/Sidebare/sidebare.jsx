@@ -4,6 +4,16 @@ import "../Sidebare/sidebare.css";
 export default function Sidebare() {
   return (
     <menu>
+      <div className="profile-section">
+        <div className="profile-content">
+          <img 
+            src="/src/assets/aymane.png" 
+            alt="Aymane Maniani" 
+            className="profile-image"
+          />
+          <h2 className="profile-name">Aymane Maniani</h2>
+        </div>
+      </div>
       <ul>
         <Link to="/" className="nav-link">
           <li>
