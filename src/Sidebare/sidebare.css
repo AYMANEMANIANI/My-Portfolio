@@ -1,0 +1,123 @@
+menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    padding: 2rem 1rem;
+    color: white;
+    background: linear-gradient(135deg, #2d96ff 0%, #1e40af 100%);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+ul li {
+    margin: 12px 0;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+ul li i {
+    font-size: 1.2rem;
+}
+
+.cantact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+.cantact li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.cantact li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Style pour le titre Contact */
+.cantact-title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    margin: 2rem 0 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.cantact-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* Styles pour les écrans mobiles */
+@media (max-width: 768px) {
+    menu {
+        width: 70px;
+        padding: 2rem 0.5rem;
+    }
+    
+    .nav-link span {
+        display: none;
+    }
+    
+    .cantact {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cantact-title {
+        margin: 1rem 0;
+    }
+    
+    .cantact-title::after {
+        display: none;
+    }
+    
+    .cantact-title::before {
+        content: '☎️';
+        font-size: 1.2rem;
+    }
+}
