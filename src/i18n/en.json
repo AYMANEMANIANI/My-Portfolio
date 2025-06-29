@@ -1,0 +1,53 @@
+{
+  "home": {
+    "welcome": "Welcome to my portfolio",
+    "title": "Aymane Maniani",
+    "subtitle": "Full Stack Developer (ReactJS/Angular & Laravel)",
+    "description": "Modern, fast and aesthetic web solutions. Between innovation, performance and careful user experience, every line of code aims for digital excellence.",
+    "downloadCv": "Download my CV",
+    "about": "About"
+  },
+  "about": {
+    "title": "About Me",
+    "description1": "Passionate about web development, I design dynamic applications by combining the power of Laravel on the backend with the reactivity of React on the frontend. I'm particularly interested in creating fluid, intuitive, and high-performance interfaces, while ensuring clear architecture and well-structured code.",
+    "description2": "Always seeking progress, I enjoy taking on new challenges, exploring innovative technologies, and participating in meaningful projects."
+  },
+  "skills": {
+    "title": "My Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "tools": "Tools"
+  },
+  "projects": {
+    "title": "My Projects",
+    "viewProject": "View Project →",
+    "items": [
+      {
+        "id": 1,
+        "title": "E-learning Platform",
+        "description": "Development of an interactive educational platform that allows users to learn online with progress tracking, user management, and dynamic content.",
+        "technologies": ["React.js", "Laravel", "MySQL"]
+      },
+      {
+        "id": 2,
+        "title": "Accessories E-commerce Website",
+        "description": "Creation of an online store with WordPress and WooCommerce, integrating product management, orders, payments, and a custom admin interface.",
+        "technologies": ["WordPress", "WooCommerce", "CMS"]
+      },
+      {
+        "id": 3,
+        "title": "Interactive Educational Game",
+        "description": "Development of a fun mini-game for children to test their knowledge through an animated interface, with scoring and visual progression.",
+        "technologies": ["JavaScript", "HTML5", "CSS3", "PHP"]
+      }
+    ]
+  },
+  "sidebar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+}

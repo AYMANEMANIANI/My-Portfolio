@@ -26,9 +26,11 @@ import {
   SiWoocommerce
 } from "react-icons/si";
 import { BiServer } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 import "./skills.css";
 
 export default function Skills() {
+  const { t } = useTranslation();
   const frontendSkills = [
     { id: 1, name: "HTML5", icon: <FaHtml5 />, color: "#E44D26" },
     { id: 2, name: "CSS3", icon: <FaCss3Alt />, color: "#264DE4" },
@@ -66,10 +68,10 @@ export default function Skills() {
 
   return (
     <div className="skills-container">
-      <h2 className="skills-title">Mes Compétences</h2>
+      <h2 className="skills-title">{t('skills.title')}</h2>
 
       <section className="skills-section" style={{ "--delay": 1 }}>
-        <h3>Frontend</h3>
+        <h3>{t('skills.frontend')}</h3>
         <div className="skills-grid">
           {frontendSkills.map((skill, index) => (
             <div
@@ -88,7 +90,7 @@ export default function Skills() {
       </section>
 
       <section className="skills-section" style={{ "--delay": 2 }}>
-        <h3>Backend</h3>
+        <h3>{t('skills.backend')}</h3>
         <div className="skills-grid">
           {backendSkills.map((skill, index) => (
             <div
@@ -107,7 +109,7 @@ export default function Skills() {
       </section>
 
       <section className="skills-section" style={{ "--delay": 3 }}>
-        <h3>Base de données</h3>
+        <h3>{t('skills.database')}</h3>
         <div className="skills-grid">
           {databaseSkills.map((skill, index) => (
             <div
@@ -126,7 +128,7 @@ export default function Skills() {
       </section>
 
       <section className="skills-section" style={{ "--delay": 4 }}>
-        <h3>Outils</h3>
+        <h3>{t('skills.tools')}</h3>
         <div className="skills-grid">
           {toolsSkills.map((skill, index) => (
             <div

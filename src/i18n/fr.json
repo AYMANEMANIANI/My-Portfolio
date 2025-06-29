@@ -1,0 +1,53 @@
+{
+  "home": {
+    "welcome": "Bienvenue sur mon portfolio",
+    "title": "Aymane Maniani",
+    "subtitle": "Développeur Full Stack passionné (ReactJS/Angular & Laravel)",
+    "description": "Des solutions web modernes, rapides et esthétiques. Entre innovation, performance et expérience utilisateur soignée, chaque ligne de code vise l'excellence digitale.",
+    "downloadCv": "Télécharger mon CV",
+    "about": "À propos"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description1": "Passionné par le développement web, je conçois des applications dynamiques en combinant la puissance de Laravel côté backend avec la réactivité de React côté frontend. Je m'intéresse particulièrement à la création d'interfaces fluides, intuitives et performantes, tout en assurant une architecture claire et un code bien structuré.",
+    "description2": "Toujours en quête de progrès, j'aime relever de nouveaux défis, explorer des technologies innovantes et participer à des projets qui ont du sens."
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Base de données",
+    "tools": "Outils"
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "viewProject": "Voir le projet →",
+    "items": [
+      {
+        "id": 1,
+        "title": "Plateforme d'apprentissage en ligne",
+        "description": "Développement d'une plateforme éducative interactive permettant aux utilisateurs d'apprendre en ligne avec suivi de progression, gestion des utilisateurs et contenus dynamiques.",
+        "technologies": ["React.js", "Laravel", "MySQL"]
+      },
+      {
+        "id": 2,
+        "title": "Site E-commerce pour accessoires",
+        "description": "Création d'une boutique en ligne avec WordPress et WooCommerce, intégrant la gestion des produits, des commandes, des paiements et une interface administrateur personnalisée.",
+        "technologies": ["WordPress", "WooCommerce", "CMS"]
+      },
+      {
+        "id": 3,
+        "title": "Jeu éducatif interactif",
+        "description": "Développement d'un mini-jeu ludique pour enfants visant à tester leurs connaissances via une interface animée, avec score et progression visuelle.",
+        "technologies": ["JavaScript", "HTML5", "CSS3", "PHP"]
+      }
+    ]
+  },
+  "sidebar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "contact": "Contact"
+  }
+}

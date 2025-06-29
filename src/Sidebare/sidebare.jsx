@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import "../Sidebare/sidebare.css";
+import LanguageSelector from "../i18n/selector";
+import { useTranslation } from "react-i18next";
 
 export default function Sidebare() {
+  const { t } = useTranslation();
   return (
     <menu>
       <div className="profile-section">
@@ -15,31 +18,32 @@ export default function Sidebare() {
         </div>
       </div>
       <ul>
+        <LanguageSelector/>
         <Link to="/" className="nav-link">
           <li>
             <i className="bi bi-house-door-fill"></i>
-            <span>Accueil</span>
+            <span>{t('sidebar.home')}</span>
           </li>
         </Link>
         <Link to="/about" className="nav-link">
           <li>
             <i className="bi bi-person-fill"></i>
-            <span>À propos</span>
+            <span>{t('sidebar.about')}</span>
           </li>
         </Link>
         <Link to="/skills" className="nav-link">
           <li>
             <i className="bi bi-code-slash"></i>
-            <span>Compétences</span>
+            <span>{t('sidebar.skills')}</span>
           </li>
         </Link>
         <Link to="/projects" className="nav-link">
           <li>
             <i className="bi bi-pc-display"></i>
-            <span>Projets</span>
+            <span>{t('sidebar.projects')}</span>
           </li>
         </Link>
-        <span className="cantact-title">Contact</span>
+        <span className="cantact-title">{t('sidebar.contact')}</span>
         <ul className="cantact">
           <li>
             <a

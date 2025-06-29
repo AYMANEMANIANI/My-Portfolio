@@ -1,39 +1,36 @@
 import "./projects.css";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
-  const projects = [
-    {
-      id: 1,
-      title: "Plateforme d'apprentissage en ligne",
-      description:
-        "Développement d'une plateforme éducative interactive permettant aux utilisateurs d'apprendre en ligne avec suivi de progression, gestion des utilisateurs et contenus dynamiques.",
-      technologies: ["React.js", "Laravel", "MySQL"],
-      image: "/Nouvlaire.png",
-      link: "#",
-    },
-    {
-      id: 2,
-      title: "Site E-commerce pour accessoires",
-      description:
-        "Création d'une boutique en ligne avec WordPress et WooCommerce, intégrant la gestion des produits, des commandes, des paiements et une interface administrateur personnalisée.",
-      technologies: ["WordPress", "WooCommerce", "CMS"],
-      image: "/screencapture-klaus-ma-1.png",
-      link: "https://klaus.ma/",
-    },
-    {
-      id: 3,
-      title: "Jeu éducatif interactif",
-      description:
-        "Développement d’un mini-jeu ludique pour enfants visant à tester leurs connaissances via une interface animée, avec score et progression visuelle.",
-      technologies: ["JavaScript", "HTML5", "CSS3", "PHP"],
-      image: "/P1_game.png",
-      link: "https://time-game-zeta.vercel.app/",
-    },
-  ];
+  const { t } = useTranslation();
+  const projectsData = t('projects.items', { returnObjects: true });
+  
+  // Ajout des données statiques qui ne changent pas avec la langue
+  const projects = projectsData.map((project, index) => {
+    const staticData = [
+      { 
+        image: "/Nouvlaire.png",
+        link: "#"
+      },
+      { 
+        image: "/screencapture-klaus-ma-1.png",
+        link: "https://klaus.ma/"
+      },
+      { 
+        image: "/P1_game.png",
+        link: "https://time-game-zeta.vercel.app/"
+      }
+    ][index];
+    
+    return {
+      ...project,
+      ...staticData
+    };
+  });
 
   return (
     <div className="projects-container">
-      <h2 className="projects-title">Mes Projets</h2>
+      <h2 className="projects-title">{t('projects.title')}</h2>
 
       <div className="projects-grid">
         {projects.map((project) => (
@@ -57,7 +54,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Voir le projet →
+                {t('projects.viewProject')}
               </a>
             </div>
           </div>

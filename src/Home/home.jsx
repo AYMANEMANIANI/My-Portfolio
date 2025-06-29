@@ -1,18 +1,17 @@
 import { Link } from "react-router-dom";
 import "../Home/home.css";
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <div className="app-home">
+      <span>{t('home.welcome')}</span>
       <h1>
-        Aymane Maniani <i className="bi bi-check-circle-fill"></i>
+        {t('home.title')} <i className="bi bi-check-circle-fill"></i>
       </h1>
-      <h2>Développeur Full Stack passionné (ReactJS/Angular & Laravel)</h2>
-      <p>
-        Des solutions web modernes, rapides et esthétiques. Entre innovation,
-        performance et expérience utilisateur soignée, chaque ligne de code vise
-        l'excellence digitale.
-      </p>
+      <h2>{t('home.subtitle')}</h2>
+      <p>{t('home.description')}</p>
       <div>
         <a
           href="/cv-aymane.pdf"
@@ -20,10 +19,10 @@ export default function Home() {
           className="btn btn-outline-primary"
         >
           <i className="bi bi-download"></i>
-          <span> Télécharger mon CV</span>
+          <span>{" "+t('home.downloadCv')}</span>
         </a>
         <Link to="/about" className="btn btn-outline-primary ms-3">
-          À propos
+          {t('home.about')}
         </Link>
       </div>
     </div>
