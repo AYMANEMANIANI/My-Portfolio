@@ -55,5 +55,6 @@ body, html, #root {
   .content {
     margin-left: 70px;
     padding: 15px;
+    margin-left: 0px;
   }
 }

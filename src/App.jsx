@@ -7,6 +7,7 @@ import Home from "./Home/home";
 import About from "./About/about";
 import Skills from "./Skills/skills";
 import Projects from "./projects/projects";
+import LanguageSelector from "./i18n/selector";
 
 function App() {
   return (

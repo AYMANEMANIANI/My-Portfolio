@@ -19,7 +19,7 @@ export default function Sidebare() {
       </div>
       <ul>
         <LanguageSelector/>
-        <Link to="/" className="nav-link">
+        <Link to="/" className="nav-link ">
           <li>
             <i className="bi bi-house-door-fill"></i>
             <span>{t('sidebar.home')}</span>

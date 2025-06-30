@@ -18,8 +18,8 @@ export default function Home() {
           download
           className="btn btn-outline-primary"
         >
+          <span>{t('home.downloadCv') + " "}</span>
           <i className="bi bi-download"></i>
-          <span>{" "+t('home.downloadCv')}</span>
         </a>
         <Link to="/about" className="btn btn-outline-primary ms-3">
           {t('home.about')}
