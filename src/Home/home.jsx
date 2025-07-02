@@ -6,7 +6,6 @@ export default function Home() {
   const { t } = useTranslation();
   return (
     <div className="app-home">
-      <span>{t('home.welcome')}</span>
       <h1>
         {t('home.title')} <i className="bi bi-check-circle-fill"></i>
       </h1>
